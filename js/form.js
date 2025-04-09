@@ -1,4 +1,5 @@
 const form = document.querySelector("[data-js=form]");
+const cardList = document.querySelector("[data-js=card-list]");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -6,13 +7,9 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  const newCardList = document.createElement("ul");
-  newCardList.classList.add("card-list");
-  document.body.append(newCardList);
-
   const newCard = document.createElement("li");
   newCard.classList.add("card-list__item");
-  newCardList.append(newCard);
+  cardList.append(newCard);
 
   const newArticle = document.createElement("article");
   newArticle.classList.add("card");
@@ -69,3 +66,17 @@ form.addEventListener("submit", (event) => {
   );
   newIcon.append(newIconPath);
 });
+
+const textArea1 = document.querySelector("[data-js=textarea-1]");
+const textArea2 = document.querySelector("[data-js=textarea-2]");
+const counter1 = document.querySelector("[data-js=counter-1]");
+const counter2 = document.querySelector("[data-js=counter-2]");
+
+count(textArea1, counter1);
+count(textArea2, counter2);
+
+function count(area, counter) {
+  area.addEventListener("input", (event) => {
+    counter.innerHTML = `${150 - event.target.value.length} characters left`;
+  });
+}

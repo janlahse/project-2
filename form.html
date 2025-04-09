@@ -23,7 +23,10 @@
           name="question"
           rows="4"
           cols="50"
+          maxlength="150"
+          data-js="textarea-1"
         ></textarea>
+        <p data-js="counter-1" class="counter">150 characters left</p>
         <label for="answer">Your answer: </label>
         <textarea
           class="text-input"
@@ -31,11 +34,15 @@
           name="answer"
           rows="4"
           cols="50"
+          maxlength="150"
+          data-js="textarea-2"
         ></textarea>
+        <p data-js="counter-2" class="counter">150 characters left</p>
         <label for="tag">Your tag: </label>
         <input name="tag" class="text-input" id="tag" type="text" />
         <button class="form-button" type="submit">Submit</button>
       </form>
+      <ul class="card-list form-card-list" data-js="card-list"></ul>
     </main>
 
     <nav class="navigation">
@@ -62,7 +69,7 @@
           >
             <img
               src="assets/bookmark.svg"
-              alt="Home Icon"
+              alt="Bookmark Icon"
               width="24px"
               height="24px"
             />
@@ -72,7 +79,7 @@
           <a
             class="navigation__link"
             href="form.html"
-            aria-label="go to bookmarks page"
+            aria-label="go to add question page"
           >
             <img
               src="assets/circle-plus.svg"
@@ -90,7 +97,7 @@
           >
             <img
               src="assets/user.svg"
-              alt="Home Icon"
+              alt="User Icon"
               width="24px"
               height="24px"
             />
