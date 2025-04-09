@@ -4,7 +4,7 @@ bookmark.addEventListener("click", () => {
   bookmark.classList.toggle("bookmark--active");
 });
 
-//toggle answer visibility & button caption on click
+//toggle answer visibility & button label on click
 const answerButton = document.querySelector("[data-js=answer-button]");
 const answer = document.querySelector("[data-js=answer]");
 answerButton.addEventListener("click", () => {
