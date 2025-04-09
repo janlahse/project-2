@@ -1,0 +1,32 @@
+.form {
+  padding: 9rem 2rem 4rem 2rem;
+  max-width: 45rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  border: 1px solid var(--black);
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-top: 0.3rem;
+  position: relative;
+}
+
+.form-button {
+  border: 1px solid var(--black);
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  width: 15rem;
+  text-align: center;
+  position: relative;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.form label {
+  margin: 0 1rem;
+}

@@ -15,11 +15,26 @@
     </header>
 
     <main>
-      <form data-js="form">
-        <textarea name="question" rows="4" cols="50"></textarea>
-        <textarea name="answer" rows="4" cols="50"></textarea>
-        <input type="text" />
-        <button type="submit"></button>
+      <form class="form" data-js="form">
+        <label for="question">Your question: </label>
+        <textarea
+          class="text-input"
+          id="question"
+          name="question"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <label for="answer">Your answer: </label>
+        <textarea
+          class="text-input"
+          id="answer"
+          name="answer"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <label for="tag">Your tag: </label>
+        <input class="text-input" id="tag" type="text" />
+        <button class="form-button" type="submit">Submit</button>
       </form>
     </main>
 
