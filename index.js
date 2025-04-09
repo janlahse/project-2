@@ -1,1 +1,7 @@
-// phew… not a lot going on here. Please add some code!
+//toggle bookmark on click
+const bookmark = document.querySelector("[data-js=bookmark]");
+bookmark.addEventListener("click", () => {
+  bookmark.classList.toggle("bookmark--active");
+});
+
+//card__answer--active
