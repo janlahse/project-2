@@ -63,6 +63,24 @@ form.addEventListener("submit", (event) => {
                     d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
                   />
                 </svg>`;
+
+  //toggle bookmark on click
+  const bookmark = document.querySelector("[data-js=bookmark]");
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.toggle("bookmark--active");
+  });
+
+  //toggle answer visibility & button label on click
+  const answerButton = document.querySelector("[data-js=answer-button]");
+  const answer = document.querySelector("[data-js=answer]");
+  answerButton.addEventListener("click", () => {
+    answer.classList.toggle("card__answer--active");
+    if (answer.classList.contains("card__answer--active")) {
+      answerButton.innerHTML = "Hide answer";
+    } else {
+      answerButton.innerHTML = "Show answer";
+    }
+  });
   /*
   //problem has to be somewhere in this paragraph: 
   const newIcon = document.createElement("svg");
