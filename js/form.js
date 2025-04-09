@@ -53,6 +53,18 @@ form.addEventListener("submit", (event) => {
   newBMButton.setAttribute("data-js", "bookmark");
   newBMContainer.append(newBMButton);
 
+  newBMButton.innerHTML = `
+                <svg
+                  class="bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>`;
+  /*
+  //problem has to be somewhere in this paragraph: 
   const newIcon = document.createElement("svg");
   newIcon.classList.add("bookmark__icon");
   newIcon.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -65,6 +77,7 @@ form.addEventListener("submit", (event) => {
     "M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
   );
   newIcon.append(newIconPath);
+  */
 });
 
 const textArea1 = document.querySelector("[data-js=textarea-1]");
