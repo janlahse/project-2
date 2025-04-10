@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./js/darkmode.js" defer></script>
     <link rel="icon" type="image" href="./assets/message-circle-question.png" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-js="header">
       <h1 class="header__title">Profile</h1>
     </header>
     <main class="profile">
@@ -32,7 +32,7 @@
         blanditiis libero?
       </p>
       <ul class="counter-list">
-        <li class="counter-list__item">
+        <li class="counter-list__item" data-js="counter-item-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
@@ -46,7 +46,7 @@
           </svg>
           <span>12</span>
         </li>
-        <li class="counter-list__item">
+        <li class="counter-list__item" data-js="counter-item-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"

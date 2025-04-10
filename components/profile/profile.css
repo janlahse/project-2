@@ -69,3 +69,8 @@
   + .profile__settings-darkmode-label:after {
   right: 5px;
 }
+
+.darkmode {
+  color: #eee;
+  background-color: #222;
+}
